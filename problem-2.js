@@ -2,24 +2,17 @@ function checkName(name) {
    if (typeof name !== "string") {
       return "invalid";
    }
-   const nameLength = name.length;
-   const lastCharacter = name[nameLength - 1];
+
+   const lastCharacter = name[name.length - 1].toLowerCase();
 
    if (
-      lastCharacter === "A" ||
       lastCharacter === "a" ||
       lastCharacter === "y" ||
-      lastCharacter === "Y" ||
       lastCharacter === "i" ||
-      lastCharacter === "I" ||
       lastCharacter === "e" ||
-      lastCharacter === "E" ||
       lastCharacter === "o" ||
-      lastCharacter === "O" ||
       lastCharacter === "u" ||
-      lastCharacter === "U" ||
-      lastCharacter === "w" ||
-      lastCharacter === "W"
+      lastCharacter === "w"
    ) {
       return "Good Name";
    } else {
