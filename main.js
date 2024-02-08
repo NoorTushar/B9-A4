@@ -45,7 +45,7 @@ function deleteInvalids(array) {
       return "ERROR: please enter an array.";
    }
    const validArray = [];
-   for (item of array) {
+   for (let item of array) {
       if (typeof item === "number" && !isNaN(item)) {
          validArray.push(item);
       }
@@ -81,8 +81,8 @@ function monthlySavings(arr, livingCost) {
 
    let totalPayment = 0;
 
-   for (payment of arr) {
-      const tax = 0.2;
+   for (let payment of arr) {
+      const tax = 20 / 100;
       if (payment >= 3000) {
          payment = payment - payment * tax;
       }
@@ -90,14 +90,10 @@ function monthlySavings(arr, livingCost) {
    }
 
    const totalSavings = totalPayment - livingCost;
+
    if (totalSavings < 0) {
       return "earn more";
    } else {
       return totalSavings;
    }
 }
-
-console.log(monthlySavings([1000, 2000, 3000], 5400));
-console.log(monthlySavings([1000, 2000, 2500], 5000));
-console.log(monthlySavings([900, 2700, 3400], 10000));
-console.log(monthlySavings(100, [900, 2700, 3400]));
