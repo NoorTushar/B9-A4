@@ -59,10 +59,10 @@ function password(obj) {
    let siteName = obj.siteName;
 
    if (
-      birthYear.toString().length !== 4 ||
       name === undefined ||
       birthYear === undefined ||
-      siteName === undefined
+      siteName === undefined ||
+      birthYear.toString().length !== 4
    ) {
       return "invalid";
    }
@@ -73,16 +73,6 @@ function password(obj) {
 
    return password;
 }
-
-console.log(
-   password({ name: "kolimuddin", birthYear: 1999, siteName: "google" })
-);
-console.log(password({ name: "rahat", birthYear: 2002, siteName: "Facebook" }));
-console.log(password({ name: "toky", birthYear: 200, siteName: "Facebook" }));
-console.log(password({ name: "maisha", birthYear: 2002 }));
-console.log(
-   password({ name: "kolimuddin", birthYear: 19999, siteName: "google" })
-);
 
 function monthlySavings(arr, livingCost) {
    if (!Array.isArray(arr) || typeof livingCost !== "number") {
