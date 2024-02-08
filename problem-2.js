@@ -1,3 +1,4 @@
+"use strict";
 function checkName(name) {
    if (typeof name !== "string") {
       return "invalid";

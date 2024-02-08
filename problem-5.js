@@ -1,3 +1,4 @@
+"use strict";
 function monthlySavings(arr, livingCost) {
    if (!Array.isArray(arr) || typeof livingCost !== "number") {
       return "invalid input";

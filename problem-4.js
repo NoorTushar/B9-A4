@@ -1,3 +1,4 @@
+"use strict";
 function password(obj) {
    const name = obj.name;
    const birthYear = obj.birthYear;
@@ -24,3 +25,4 @@ console.log(
 console.log(password({ name: "rahat", birthYear: 2002, siteName: "Facebook" }));
 console.log(password({ name: "toky", birthYear: 200, siteName: "Facebook" }));
 console.log(password({ name: "maisha", birthYear: 2002 }));
+console.log(password({}));

@@ -1,6 +1,6 @@
 function calculateMoney(ticketSale) {
    if (ticketSale < 0) {
-      return "ERROR: please enter a positive input number";
+      return "ERROR: please enter a positive number";
    }
    const perTicketPrice = 120;
    const securityCost = 500;

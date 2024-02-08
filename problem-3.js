@@ -1,3 +1,4 @@
+"use strict";
 function deleteInvalids(array) {
    if (!Array.isArray(array)) {
       return "ERROR: please enter an array.";
