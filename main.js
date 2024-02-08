@@ -17,6 +17,7 @@ function calculateMoney(ticketSale) {
 
    return moneyRemaining;
 }
+
 function checkName(name) {
    if (typeof name !== "string") {
       return "invalid";
@@ -38,11 +39,6 @@ function checkName(name) {
       return "Bad Name";
    }
 }
-console.log(10, checkName("Salman"));
-console.log(11, checkName("RAFEE"));
-console.log(12, checkName("Jhankar"));
-console.log(13, checkName(19));
-console.log(14, checkName(["Rashed"]));
 
 function deleteInvalids(array) {
    if (!Array.isArray(array)) {
