@@ -8,15 +8,17 @@ function calculateMoney(ticketSale) {
    const totalStuff = 8;
 
    const lunchCost = lunchPerStuff * totalStuff;
+
    const totalCost = securityCost + lunchCost;
 
    const totalRevenue = ticketSale * perTicketPrice;
 
-   const profit = totalRevenue - totalCost;
+   const moneyRemaining = totalRevenue - totalCost;
 
-   return profit;
+   return moneyRemaining;
 }
 
+console.log(calculateMoney(2));
 console.log(calculateMoney(10));
 console.log(calculateMoney(1055));
 console.log(calculateMoney(93));

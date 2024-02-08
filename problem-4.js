@@ -1,14 +1,13 @@
-/*function signature/sample */
 function password(obj) {
-   // { name: “kolimuddin” , birthYear: 1999 , siteName: “google” }
    const name = obj.name;
    const birthYear = obj.birthYear;
    let siteName = obj.siteName;
 
    if (
-      (birthYear.toString().length < 4 || name,
-      birthYear,
-      siteName === undefined)
+      birthYear.toString().length < 4 ||
+      name === undefined ||
+      birthYear === undefined ||
+      siteName === undefined
    ) {
       return "invalid";
    }

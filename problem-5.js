@@ -1,10 +1,10 @@
-/*function signature/sample */
 function monthlySavings(arr, livingCost) {
    if (!Array.isArray(arr) || typeof livingCost !== "number") {
       return "invalid input";
    }
 
    let totalPayment = 0;
+
    for (payment of arr) {
       const tax = 0.2;
       if (payment >= 3000) {
