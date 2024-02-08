@@ -17,12 +17,6 @@ function calculateMoney(ticketSale) {
 
    return moneyRemaining;
 }
-console.log(calculateMoney(2));
-console.log(calculateMoney(10));
-console.log(calculateMoney(1055));
-console.log(calculateMoney(93));
-console.log(calculateMoney(-1));
-
 function checkName(name) {
    if (typeof name !== "string") {
       return "invalid";
