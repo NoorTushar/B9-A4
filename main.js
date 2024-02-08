@@ -52,7 +52,7 @@ console.log(14, checkName(["Rashed"]));
 
 function deleteInvalids(array) {
    if (!Array.isArray(array)) {
-      return "ERROR! Please Enter an Array.";
+      return "ERROR: please enter an array.";
    }
    const validArray = [];
    for (item of array) {
@@ -87,7 +87,7 @@ function password(obj) {
    let siteName = obj.siteName;
 
    if (
-      birthYear.toString().length < 4 ||
+      birthYear.toString().length !== 4 ||
       name === undefined ||
       birthYear === undefined ||
       siteName === undefined
@@ -108,6 +108,9 @@ console.log(
 console.log(password({ name: "rahat", birthYear: 2002, siteName: "Facebook" }));
 console.log(password({ name: "toky", birthYear: 200, siteName: "Facebook" }));
 console.log(password({ name: "maisha", birthYear: 2002 }));
+console.log(
+   password({ name: "kolimuddin", birthYear: 19999, siteName: "google" })
+);
 
 function monthlySavings(arr, livingCost) {
    if (!Array.isArray(arr) || typeof livingCost !== "number") {

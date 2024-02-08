@@ -4,7 +4,7 @@ function password(obj) {
    let siteName = obj.siteName;
 
    if (
-      birthYear.toString().length < 4 ||
+      birthYear.toString().length !== 4 ||
       name === undefined ||
       birthYear === undefined ||
       siteName === undefined
@@ -18,7 +18,6 @@ function password(obj) {
 
    return password;
 }
-
 console.log(
    password({ name: "kolimuddin", birthYear: 1999, siteName: "google" })
 );
