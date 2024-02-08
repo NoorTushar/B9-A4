@@ -4,10 +4,10 @@ function password(obj) {
    let siteName = obj.siteName;
 
    if (
-      birthYear.toString().length !== 4 ||
       name === undefined ||
       birthYear === undefined ||
-      siteName === undefined
+      siteName === undefined ||
+      birthYear.toString().length !== 4
    ) {
       return "invalid";
    }

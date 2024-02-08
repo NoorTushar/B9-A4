@@ -1,9 +1,9 @@
 function deleteInvalids(array) {
    if (!Array.isArray(array)) {
-      return "ERROR! Please Enter an Array.";
+      return "ERROR: please enter an array.";
    }
    const validArray = [];
-   for (item of array) {
+   for (let item of array) {
       if (typeof item === "number" && !isNaN(item)) {
          validArray.push(item);
       }

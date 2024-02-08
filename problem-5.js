@@ -5,8 +5,8 @@ function monthlySavings(arr, livingCost) {
 
    let totalPayment = 0;
 
-   for (payment of arr) {
-      const tax = 0.2;
+   for (let payment of arr) {
+      const tax = 20 / 100;
       if (payment >= 3000) {
          payment = payment - payment * tax;
       }
@@ -14,6 +14,7 @@ function monthlySavings(arr, livingCost) {
    }
 
    const totalSavings = totalPayment - livingCost;
+
    if (totalSavings < 0) {
       return "earn more";
    } else {
