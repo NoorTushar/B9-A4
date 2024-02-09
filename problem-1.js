@@ -1,6 +1,7 @@
 "use strict";
 function calculateMoney(ticketSale) {
-   if (ticketSale < 0) {
+   const ticketSaleQty = Number(ticketSale);
+   if (ticketSaleQty < 0) {
       return "ERROR: please enter a positive number";
    }
    const perTicketPrice = 120;
@@ -12,7 +13,7 @@ function calculateMoney(ticketSale) {
 
    const totalCost = securityCost + lunchCost;
 
-   const totalRevenue = ticketSale * perTicketPrice;
+   const totalRevenue = ticketSaleQty * perTicketPrice;
 
    const moneyRemaining = totalRevenue - totalCost;
 
